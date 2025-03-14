@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <button id="theme-toggle">Toggle Theme</button>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I am Khaled Alomari. Electrical Engineer with a passion for datadriven solutions. Now, I am studying MBA specializing in Data Analytics. I have the motivation to learn more and earn more skills. Recently completed the Google Data Analytics Certificate that covers the entire scope of the data analysis process</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <button id="toggle-skills">Show/Hide Skills</button>
+        <ul id="skills-list" style="display: none;">
+            <li>Motivates and empowers others to act</li>
+            <li>Inspires trust and respect in others</li>
+            <li>Python</li>
+            <li>HTML</li>
+            <li>Javascript</li>
+            <li>Django</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <label  for="message">Message:</label>
+            <textarea id="message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+</html>
