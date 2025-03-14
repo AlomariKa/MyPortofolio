@@ -1,0 +1,164 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #ffffff;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    margin: 10px;
+    background-color: rgb(53, 52, 52);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(3, 3, 3, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+}
+/* Form Styles */
+form {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack elements vertically */
+    gap: 10px; /* Space between form elements */
+}
+
+/* Input and Textarea Styles */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 90%; /* Full width */
+    padding: 10px; /* Padding for input fields */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+/* Focus Effect for Input and Textarea */
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #4CAF50; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Textarea Specific Styles */
+textarea {
+    height: 100px; /* Set a specific height for the textarea */
+    resize: vertical; /* Allow vertical resizing only */
+}
+
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+}
+
+
+
+/* Dark Theme */
+body.dark {
+    background-color: #292929;
+    color: #1a1a1a;
+}
+
+
+
+
+body.dark section {
+    background-color: #fdfbfb; /* Darker section background for dark theme */
+    border: 1px solid #333; /* Subtle border for sections in dark theme */
+}
+
+
+/* Button Styles for Dark Theme */
+button {
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding for top/bottom and left/right */
+    text-align: center; /* Center text */
+    text-decoration: none; /* No underline */
+    display: inline-block; /* Allow setting width and height */
+    font-size: 16px; /* Font size */
+    margin: 10px 0; /* Margin for spacing */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
+}
+
+/* Theme Toggle Button Styles */
+#theme-toggle {
+    background-color: #03DAC6; /* Teal background for theme toggle */
+    color: #121212; /* Dark text for theme toggle */
+}
+
+#theme-toggle:hover {
+    background-color: #018786; /* Darker teal on hover */
+}
+
+/* Show/Hide Skills Button Styles */
+#toggle-skills {
+    background-color: #FFAB40; /* Orange background for skills toggle */
+    color: black; /* Black text for skills toggle */
+}
+
+#toggle-skills:hover {
+    background-color: #FF8F00; /* Darker orange on hover */
+}
+
+/* Submit Button Styles */
+button[type="submit"] {
+    width: 100px;
+    background-color: #28A745; /* Green background for submit button */
+    color: white; /* White text for submit button */
+}
+
+button[type="submit"]:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Focus Effect for All Buttons */
+button:focus {
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Add shadow on focus */
+}
